@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: 200vh;
+  width: 100%;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.rect {
+  width: 200px;
+  height: 100px;
+  background-color: cornflowerblue;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.rect.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
